@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.1
+X-COMMENT: q1XisT7zrS
+Class-Path:  
+Created-By: MHq7zxX9wx
+Main-Class: Main
+
