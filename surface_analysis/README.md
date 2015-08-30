@@ -71,7 +71,7 @@ Note the size and filetype of the `Favicon.ico` file. This is our next goal.
 
 After unzip this file we have the following directory tree:
 
-    Estrictamente Secreto y Confidencial.pdf.jar
+    Favicon.ico
     |____ 0doc.jar
     |____ 1Estrictamente Secreto y Confidencial.pdf
 
