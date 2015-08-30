@@ -54,6 +54,8 @@ With the following attributes:
 > * **SHA256**: c188daeeca97d4c2f9a58114cff410f1fc69399a6543644ad62cd06ea239ccf0
 > * **FileType**: compiled Java class data, version 50.0 (Java 1.6)
 
+----------
+
 The contents for `META-INF/MANIFEST.MF` file are:
 
     Manifest-Version: 1.0
@@ -64,3 +66,45 @@ The contents for `META-INF/MANIFEST.MF` file are:
     Main-Class: Principal
 
 Note the size and filetype of the `Favicon.ico` file. This is our next goal.
+
+## Surface analysis for 'Favicon.ico' file
+
+After unzip this file we have the following directory tree:
+
+    Estrictamente Secreto y Confidencial.pdf.jar
+    |____ 0doc.jar
+    |____ 1Estrictamente Secreto y Confidencial.pdf
+
+With the following attributes:
+
+> * **Filename**: "0doc.jar"
+> * **Size**: 55381 Bytes
+> * **SHA256**: db823637711d2946deccdbfde172c4f38dc6cb83d9575fb30802aab3687d3a9d
+> * **FileType**: Zip archive data, at least v2.0 to extract
+
+----------
+
+> * **Filename**: "1Estrictamente Secreto y Confidencial.pdf"
+> * **Size**: 8134 Bytes
+> * **SHA256**: 1d25194442f24a2c996d2f8952c9776675ce6f69f33a517fab72616d640de60c
+> * **FileType**: PDF document, version 1.4
+
+----------
+
+The `1Estrictamente Secreto y Confidencial.pdf` has the following metadata:
+
+    Title:          Microsoft Word - Documento1
+    Author:         USER
+    Creator:        PScript5.dll Version 5.2.2
+    Producer:       GPL Ghostscript 8.15
+    CreationDate:   Mon Dec  1 12:28:38 2014
+    ModDate:        Mon Dec  1 12:28:38 2014
+    Tagged:         no
+    Pages:          1
+    Encrypted:      no
+    Page size:      842 x 1191 pts (A3)
+    File size:      8134 bytes
+    Optimized:      no
+    PDF version:    1.4
+
+JavaScript or malicius code not found on this PDF file.
